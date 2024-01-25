@@ -1,111 +1,75 @@
-# VBlog
-![](https://img.shields.io/github/languages/top/github-laziji/VBlog.svg?style=flat)
-![](https://img.shields.io/github/stars/gitHub-laziji/VBlog.svg?style=social)
+# 个人樱花引导页
+注意：
+此源码是基于 [Dimension](https://html5up.net/dimension "Dimension") 的二次修改
 
-## 目录
-- [简介](#简介)
-- [演示地址](#演示地址)
-- [项目源码](#项目源码)
-- [项目特点](#项目特点)
-- [更新记录](#更新记录)
-- [快速使用](#快速使用)
+Demo 1：[https://nianbroken.github.io/Personal_Sakura_Guide_Page/](https://nianbroken.github.io/Personal_Sakura_Guide_Page/ "https://nianbroken.github.io/Personal_Sakura_Guide_Page/")
 
-## 简介
+Demo 2：[https://www.nianbroken.top/](https://www.nianbroken.top/ "https://www.nianbroken.top/")
 
-博客可搭建在 GitHub Pages 上,
-文章数据储存于gist 中, 通过Github API 与数据进行交互, 实现无后台、可动态发布文章的博客系统
+------------
 
-> 最近暂无更新计划
+### 更新日志：
 
+#### 1.2 - 2022年1月30日
 
-## 演示地址
-[https://github-laziji.github.io][1]
-
-## 项目源码
-[https://github.com/GitHub-Laziji/vblog][3]
-
-## 项目特点
-
-- [x] 基于 GitHub Pages 无需服务器
-- [x] 改进传统 GitHub Pages 不能动态发布的缺陷
-- [x] 包含电脑端和移动端
-- [x] 单页面应用
-
-
-## 更新记录
-
-#### 2018.5.19 更新
-- 增加使用帮助页面
-- 修复没有README.md时候出现的BUG
-
-#### 2018.5.16 更新
-- 显示粉丝数量
-- 增加粉丝详情页面
-
-#### 2018.5.15 更新
-- 粉丝页面优化没有粉丝的情况
-- 修改有的图片越界
-- 配置增加是否自动播放音乐
-- 去除默认音乐
-
-#### 2018.5.13 更新
-- 电脑端增加社交圈, 查看粉丝和关注的用户
-
-#### 2018.5.11 更新
-- 移动端增加博客, 项目, 个人中心, 移动端和PC端共用API, 页面独立 
-- 修复文章样式奇怪的BUG
-
-#### 2018.5.8 更新
-- 增加配置选项
-- 改善富文本编辑器
-
-#### 2018.5.6 更新
-- 状态栏增加音乐播放器
-
-#### 2018.5.5 更新
-- 增加了系统配置, 可以动态修改标题, 描述, 背景等配置 
-
-#### 2018.5.2 更新
-- 增加博客和项目列表的分页 
-- 增加分享链接 
-- 改进Token绑定验证 
-- 修改代码结构 
-
-#### 2018.4.30 更新
-- 添加了从github获取个人开源项目的功能,显示信息更加全面,显示开源项目列表
-- Readme 从github动态获取
-
-#### 2018.4.29 更新
-- 增加个人信息的状态栏
-- 修复发图片博文的BUG 
+- 更正错别字“途径”→“途经”（她只是**途经**我留下了星火 而我却任凭它焚烧了我整个荒原）
+- 修复页面中头像周围出现两个圆框
+- 新增版权信息的年份支持自动更新
+- 底部新增一条文案
+- 修复其他Bug
 
 
 
-## 快速使用
-搭建博客只需2步
-- 点击github头像旁边的 "+" 号 选择 ```Import repository ```克隆地址填 ```https://github.com/GitHub-Laziji/GitHub-Laziji.github.io ```项目名填 ```你的用户名.github.io ```
-- 克隆完成后 修改文件 ```/static/configuration.json``` 中的 ```githubUsername``` 为自己的github用户名
+#### 1.1 - 2021年7月21日
+
+- 修复 **Svg 无法显示** 的问题
+- 增加 **Meta Description** 优化SEO
+- 增加 **图像的 Alt 属性** 优化SEO
+- 增加 **Meta Language 标记** 优化SEO
+- 增加 **万能收款码** （需自行修改 `\money_receiving_QR_code\index.html` 相关参数）
+- 此版本可通过Bing、Google搜索引擎的质量检查
+
+------------
+
+### 修改内容：
+
+1. 将页面内头像改为本地头像
+2. 将原本的背景替换为动态樱花背景（参考自 [fwxiaohan.github.io](https://github.com/fwxiaohan/fwxiaohan.github.io "fwxiaohan.github.io") ）
+3. 去除`<li>`标签的锚点链接，改为文本链接
+4. 去除超链接下方的横线
+
+main.css内的
+
+```css
+border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+```
+
+5. 去除页面中间的黑色块块
+
+main.css内的
+
+```css
+background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+```
+
+6. 增加显示访问者IP地址（调用 [https://pv.sohu.com/cityjson?ie=utf-8](https://pv.sohu.com/cityjson?ie=utf-8 "https://pv.sohu.com/cityjson?ie=utf-8") 接口）
+
+------------
+
+### Dimension与个人樱花引导页的对比：
+
+> #### Dimension
+>
+> [![Dimension](https://blog.nianbroken.top/usr/uploads/2021/05/2403737638.png "Dimension")](https://html5up.net/dimension "Dimension")
 
 
-类似演示地址其中 GitHub-Laziji 为我的用户名
+> #### 个人樱花引导页
+>
+> 静态图
+> [![碎念个人樱花引导页静态图](https://blog.nianbroken.top/usr/uploads/2021/05/1477674244.png "碎念个人樱花引导页静态图")](https://www.nianbroken.top/ "碎念个人樱花引导页静态图")
 
+> 动态图
+> [![碎念个人樱花引导页动态图](https://blog.nianbroken.top/usr/uploads/2021/05/3974157131.gif "碎念个人樱花引导页动态图")](https://www.nianbroken.top/ "碎念个人樱花引导页动态图")
 
-现在 ```https://你的用户名.github.io``` 就是你的个人博客了,例如[https://github-laziji.github.io][1]
-
-
-
-#### 获取Token
-
-在 ```github > settings > Developer settings > Personal access tokens```  勾选```gist``` 和 ```repo```权限 获取```Token```
-
-
-------
-
-
-作者 *Laziji*
-
-
-
-  [1]: https://github-laziji.github.io
-  [2]: https://github.com/GitHub-Laziji/GitHub-Laziji.github.io
-  [3]: https://github.com/GitHub-Laziji/vblog
+由于Gif较大，可能加载不出来或加载比较慢，建议直接点击图片跳转至演示站查看。
