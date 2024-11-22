@@ -23,8 +23,10 @@ export const getStaticPaths = async () => {
 
 <script>
   import { mount } from "@/components/Pager";
+  import { mount as mountComment } from "@/components/comment";
 
   mount(".navigator", "data-page-id");
+  mountComment("#comment");
 </script>
 
 <Layout title={post.title} description={post.intro}>
@@ -65,6 +67,11 @@ export const getStaticPaths = async () => {
             <div />
           )
         }
+      </div>
+    </div>
+    <div id="comment" class="max-w-[720px] w-full">
+      <div class="flex w-full justify-center">
+        <div class="i-svg-spinners:ring-resize"></div>
       </div>
     </div>
   </main>
