@@ -7,7 +7,7 @@ export const createPlaceholderPlugin = () =>
       if (node.type.name === "heading") {
         return "What’s the title?";
       }
-      if (node.type.name === "codeBlock") {
+      if (node.type.name === "codeBlock" || node.type.name === "table") {
         return "";
       }
 

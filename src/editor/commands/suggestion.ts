@@ -43,6 +43,12 @@ export default {
         },
       },
       {
+        title: "Table",
+        command: ({ editor, range }: any) => {
+          (editor as Editor).chain().focus().deleteRange(range).insertTable().run();
+        },
+      },
+      {
         title: "Image",
         command: async ({ editor, range }: any) => {
           // const url = prompt("entre image url")
