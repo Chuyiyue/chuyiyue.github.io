@@ -1,7 +1,7 @@
 export const config = {
   github: {
-    login: "glink25", // github login name, not user name
-    repo: "test-for-anything", //"urodele",
+    login: "chuyiyue", // github login name, not user name
+    repo: "chuyiyue.github.io", //"urodele",
     logInUrl: "",
     logInAuthUrl: "",
   },
@@ -11,8 +11,8 @@ export const config = {
     description: "A self-owned full-static blog system",
   },
   footer: {
-    copyright: "© Glink",
-    copyrightUrl: "https://github.com/glink25",
+    copyright: "© ChuYiyue",
+    copyrightUrl: "https://github.com/chuyiyue",
   },
   pagination: {
     size: 10,
